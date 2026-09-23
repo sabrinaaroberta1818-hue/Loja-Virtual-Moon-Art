@@ -1,0 +1,274 @@
+body{
+    background: #f8f2ff;
+    font-family: Garamond, serif;
+    font-weight: 400;
+    color: #5b238f;
+}
+
+header{
+    background-color: rgba(101, 2, 73, 0.567);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(91, 35, 143, 0.20);
+}
+
+header h1{
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 20px 60px;
+    gap: 30px;
+}
+
+.produto{
+    width: 90%;
+    max-width: 650px;
+    height: 520px;
+    background: white;
+    border: 2px solid #c084fc;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(106, 13, 173, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.produto h1{
+    width: 100%;
+    text-align: center;
+    color: #6a0dad;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.imagem_produto{
+    width: 90%;
+    max-width: 380px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagem_produto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.botao_encomenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgba(53, 1, 38, 0.936);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(53, 1, 38, 0.936);
+    transition: 0.3s;
+}
+
+.botao_encomenda:hover{
+    background: rgba(53, 1, 38, 0.936);
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px white;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background: rgba(101, 2, 73, 0.567);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px){
+
+    header{
+        height: 110px;
+    }
+
+    header h1{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    main{
+        padding: 35px 15px 50px;
+        gap: 25px;
+    }
+
+    .produto{
+        width: 85%;
+        max-width: 550px;
+        height: auto;
+        min-height: 480px;
+        padding: 22px;
+    }
+
+    .produto h1{
+        font-size: 23px;
+    }
+
+    .imagem_produto{
+        width: 85%;
+        max-width: 350px;
+    }
+
+    .botao_encomenda{
+        width: 220px;
+        height: 52px;
+        font-size: 16px;
+    }
+
+    footer{
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header{
+        width: 100%;
+        height: 95px;
+    }
+
+    header h1{
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin: 0;
+        text-align: center;
+    }
+
+    main{
+        width: 100%;
+        min-height: auto;
+        box-sizing: border-box;
+        padding: 25px 12px 40px;
+        gap: 20px;
+    }
+
+    .produto{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        box-sizing: border-box;
+        padding: 18px 12px 22px;
+        border-radius: 20px;
+    }
+
+    .produto h1{
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 0 5px 18px;
+    }
+
+    .imagem_produto{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .imagem_produto img{
+        border-radius: 12px;
+    }
+
+    .botao_encomenda{
+        width: 85%;
+        max-width: 230px;
+        height: 52px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    footer{
+        width: 100%;
+        height: 65px;
+    }
+
+    footer p{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+
+    header{
+        height: 85px;
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+
+    main{
+        padding: 20px 8px 35px;
+        gap: 18px;
+    }
+
+    .produto{
+        padding: 15px 10px 20px;
+        border-radius: 18px;
+    }
+
+    .produto h1{
+        font-size: 18px;
+    }
+
+    .imagem_produto{
+        width: 95%;
+        max-width: 260px;
+    }
+
+    .botao_encomenda{
+        width: 90%;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    footer{
+        height: 60px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+}
